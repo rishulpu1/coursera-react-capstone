@@ -1,3 +1,21 @@
+
+/* .flex{
+  display: flex;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.items-center{
+  align-items: center;
+} */
+
+.footer{
+  background-color: #f5f5f5;
+}
+.footer h4{font-size: 24px;}
+
 .App {
   text-align: center;
 }

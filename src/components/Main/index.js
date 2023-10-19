@@ -1,7 +1,10 @@
+import Container from "../Container";
 const Main = () => {
     return(
         <main>
-            <h2>Main Section</h2>
+            <Container>
+                <h2>Main Section</h2>
+            </Container>
         </main>
         
     );
