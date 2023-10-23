@@ -38,6 +38,7 @@
         top: 60px;
         padding: 20px;
         min-width: 180px;
+        z-index: 9999;
     }
     .mainNav ul{
         flex-direction: column;

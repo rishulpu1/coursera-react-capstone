@@ -1,9 +1,11 @@
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Nav from './components/Nav';
-import Main from './components/Main';
+import Home from './components/Home';
 import Footer from './components/Footer';
 import Container from './components/Container';
+import About from './pages/About/about'; 
 import logo from "./assets/logo.svg";
 function App() {
   return (
@@ -16,7 +18,11 @@ function App() {
           <Nav />
         </Container>
       </Header>
-      <Main />
+      <Routes>
+        <Route path='/' element= { <Home />} />
+        <Route path='/about' element= { <About /> } />
+      </Routes>
+      
       <Footer />
     </>
   );
