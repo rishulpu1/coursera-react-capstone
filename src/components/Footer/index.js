@@ -1,5 +1,6 @@
 import logo from "../../assets/logo.svg";
 import Container from "../Container";
+import { Link } from "react-router-dom";
 const Footer = () => {
     return(
         <footer className="footer px-4 py-6 md:px-0">
@@ -13,8 +14,8 @@ const Footer = () => {
                         <h4>Quick Links</h4>
                         <div className="footer-nav">
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link href="/about">About</Link></li>
                                 <li><a href="#">Menu</a></li>
                                 <li><a href="#">Reserve Table</a></li>
                                 <li><a href="#">Order Online</a></li>
