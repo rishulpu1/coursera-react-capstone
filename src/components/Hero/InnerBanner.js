@@ -1,6 +1,5 @@
 import Container from "../Container";
-import Button from "../Button/button";
-const Hero = (props) => {
+const InnerBanner = (props) => {
     return(
         <div className="bg-[#495E57] py-8 w-full">
             <Container>
@@ -10,8 +9,6 @@ const Hero = (props) => {
                         <h1 className="text-4xl font-medium text-[#F4CE14] md:text-7xl">{props.HeroTitle}</h1>
                         <h2 className="text-2xl md:text-4xl text-white font-normal">{props.heroSubTitle}</h2>
                         <p className="text-white">{props.heroDesc}</p>
-                        <Button link="/booking">Reserve a Table</Button>
-                        
                     </div>
 
                     {/* Banner Right Side */}
@@ -24,4 +21,4 @@ const Hero = (props) => {
     );
 }
 
-export default Hero;
+export default InnerBanner;

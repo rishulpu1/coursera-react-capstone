@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Container from './components/Container';
 import About from './pages/About/about'; 
 import logo from "./assets/logo.svg";
+import Booking from './components/Booking';
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path='/' element= { <Home />} />
         <Route path='/about' element= { <About /> } />
+        <Route path='/booking' element= { <Booking /> } />
       </Routes>
       
       <Footer />
