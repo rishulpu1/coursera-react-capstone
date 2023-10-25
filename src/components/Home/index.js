@@ -1,6 +1,8 @@
 import Hero from "../Hero/hreo";
 import heroImg from "../../assets/restauranfood.jpg";
 import FeaturedProducts from "../featuredProducts/featuredProducts";
+import Testimonials from "../Testimonials";
+import Chicago from "../Chicago";
 const Home = () => {
     return(
         <main>
@@ -14,7 +16,8 @@ const Home = () => {
                 heroImgAlt = "Little Lemon Image"
             />
             <FeaturedProducts />
-            
+            <Testimonials />
+            <Chicago />
         </main>
         
     );
