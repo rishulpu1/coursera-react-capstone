@@ -2,7 +2,8 @@ import React from 'react'
 import InnerBanner from '../Hero/InnerBanner';
 import heroImg from "../../assets/restauranfood.jpg";
 import FeaturedProducts from "../featuredProducts/featuredProducts";
-function Booking() {
+import BookingForm from './BookingForm';
+function Booking(props) {
   return (
     <main>
         <InnerBanner 
@@ -14,6 +15,7 @@ function Booking() {
             imgClassName = "relative mt-8 md:mt-0 md:top-0 rounded-[16px] md:h-[550px]"
             heroImgAlt = "Little Lemon Image"
         />
+        <BookingForm availableTimes = {props.availableTimes} dispatch = {props.dispatch} submitForm = {props.submitForm} />
         <FeaturedProducts />
     
     </main>
