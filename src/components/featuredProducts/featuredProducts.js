@@ -5,6 +5,7 @@ import ProductCard from './ProductCard';
 import greekSalad from '../../assets/greek salad.jpg';
 import brucheta from '../../assets/bruchetta.svg';
 import lemenoDesert from '../../assets/desert.jpg';
+import Swal from 'sweetalert2';
 function FeaturedProducts(props) {
     const products = [
         {
@@ -29,6 +30,27 @@ function FeaturedProducts(props) {
             desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  Ut enim '
         }
     ];
+
+    const handleOrder = (id)=> {
+        console.log(id, "id is clicked");
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "Lorem ipsum dolor sit amet",
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, order it!'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                'Ordered!',
+                'Your order has been processed.',
+                'success'
+              )
+            }
+          })
+    }
   return (
     <div className='py-8 px-4 md:px-0 mt-8'>
         <Container>
@@ -52,7 +74,7 @@ function FeaturedProducts(props) {
                         <div className='w-full my-4'>
                             {product.desc}
                         </div>
-                        <a href='#' className='text-lg font-medium'>Order a Delivery</a>
+                        <button role='button' className='text-lg font-medium' onClick={()=>handleOrder(product.id)}>Order a Delivery</button>
                     </div>
                 </ProductCard>
             ))}

@@ -13,7 +13,7 @@ function Chicago() {
                         <h2 className="text-2xl md:text-4xl font-normal">Chicago</h2>
                         <p className="text-[#333]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu</p>
-                        <Button link="/">Reserve a Table</Button>
+                        <Button link="/booking">Reserve a Table</Button>
                         
                     </div>
 

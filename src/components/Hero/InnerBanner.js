@@ -12,7 +12,7 @@ const InnerBanner = (props) => {
                     </div>
 
                     {/* Banner Right Side */}
-                    <div className={`banner-right w-full md:w-1/2 text-right`}>
+                    <div className={`banner-right w-full hidden md:block md:w-1/2 text-right`}>
                         <img src={props.heroImg} className={`inline-block ${props.imgClassName}`} alt={props.heroImgAlt} />
                     </div>
                 </div>

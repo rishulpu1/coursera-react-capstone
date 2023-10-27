@@ -8,6 +8,8 @@ import Container from './components/Container';
 import About from './pages/About/about'; 
 import logo from "./assets/logo.svg";
 import Booking from './components/Booking';
+import ConfirmedBooking from './components/Booking/ConfirmedBooking';
+import Menu from './pages/Menu';
 import { useReducer } from 'react';
 function App() {
 
@@ -63,6 +65,8 @@ function App() {
       <Routes>
         <Route path='/' element= { <Home />} />
         <Route path='/about' element= { <About /> } />
+        <Route path='/confirmed' element= { <ConfirmedBooking /> } />
+        <Route path='/menu' element= { <Menu /> } />
         <Route path='/booking' element= { <Booking availableTimes={state} dispatch = {dispatch} submitForm = {submitForm} /> } />
       </Routes>
       
